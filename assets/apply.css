@@ -59,13 +59,13 @@ nav ul li .hover3 {
 }
 
 nav ul li:hover .hover {
-    width: 45px;
+    width: 35px;
     height: 2px;
     background-color: rgb(226, 169, 241);
 }
 
 nav ul li:hover .hover2 {
-    width: 130px;
+    width: 120px;
     height: 2px;
     background-color: rgb(226, 169, 241);
 }
@@ -82,7 +82,7 @@ nav ul .boldt a {
 
 nav ul .boldt .underline {
     height: 2px;
-    width: 150px;
+    width: 130px;
     background-color: rgb(226, 169, 241);
 }
 
@@ -449,12 +449,12 @@ form textarea{
 
     .footer-text-abs h2 {
         font-size: 3rem;
-        letter-spacing: -5px;
+        letter-spacing: -1px;
     }
 
     .footer-text-abs h1 {
         font-size: 4rem;
-        letter-spacing: -4px;
+        letter-spacing: -1px;
     }
 
     .footer-img-abs img {
@@ -483,12 +483,12 @@ form textarea{
 
     .footer-text-abs {
         left: 15px;
-        top: 38%;
+        top: 50%;
     }
 
     .footer-img-abs {
         right: 15px;
-        top: 60%;
+        top: 50%;
     }
 
     .footer-text-abs h2 {

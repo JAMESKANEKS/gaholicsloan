@@ -41,19 +41,19 @@ nav ul li .hover3 {
 }
 
 nav ul li:hover .hover {
-    width: 45px;
+    width: 35px;
     height: 2px;
     background-color: rgb(226, 169, 241);
 }
 
 nav ul li:hover .hover2 {
-    width: 138px;
+    width: 130px;
     height: 2px;
     background-color: rgb(226, 169, 241);
 }
 
 nav ul li:hover .hover3 {
-    width: 70px;
+    width: 60px;
     height: 2px;
     background-color: rgb(226, 169, 241);
 }
@@ -64,7 +64,7 @@ nav ul .boldt a {
 
 nav ul .boldt .underline {
     height: 2px;
-    width: 120px;
+    width: 110px;
     background-color: rgb(226, 169, 241);
 }
 
