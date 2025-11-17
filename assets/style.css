@@ -302,21 +302,31 @@ nav ul .boldt .underline {
     .build, .build2 {
         font-size: 3rem;
     }
+    nav ul .boldt .underline {
+    width: 45px;  
+}
+.hover {
+    width: 110px;
+}
+.hover2{
+    width: 125px;
 }
 
 /* SMALL PHONES */
 @media (max-width: 480px) {
     .sec1 {
-        padding-top: 150px;
-        background-position: center 45%;
+        padding-top: 40px;
+        background-position: center 16%;
     }
-
+    .text h2 {
+        font-size: 1rem;
+    }
     .text-sign h2 {
         font-size: 3.5rem;
     }
 
     .text-sign h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .sec1 p {
@@ -326,4 +336,6 @@ nav ul .boldt .underline {
     .build, .build2 {
         font-size: 2.3rem;
     }
+    
+}
 }
