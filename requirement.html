@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirements</title>
+
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="assets/req.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/brittany-signature-script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a><div class="hover"></div></li>
+                <li class="boldt"><a href="#">REQUIREMENTS</a><div class="underline"></div></div></li>
+                <li><a href="apply.html">APPLY FOR A LOAN</a><div class="hover2"></div></li>
+                <li><a href="about.html">ABOUT US</a><div class="hover3"></div></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="sec1">
+        <h1 class="build2">REQUIREMENTS</h1>
+        <div class="container">
+            <div class="box">
+            <img src="assets/images2/id.jpg" alt="id">
+            <h1>VALID ID’S</h1>
+            <p>We need a 2 valid ID’s with the same address on it.</p>
+        </div>
+        <div class="box2">
+            <img src="assets/images2/comaker.jpg" alt="comaker">
+            <h1>CO-MAKER</h1>
+            <p>The Co-Maker signs the loan contract together with the
+            borrower and will take responsibility if the borrower fails
+            to do so</p>
+        </div>
+        <div class="box3">
+            <img src="assets/images2/contract.jpg" alt="contract">
+            <h1>LOAN CONTRACT AGREEMENT</h1>
+            <p>A legal document that explains all the terms and conditions
+             between a lender and borrower.</p>
+        </div>
+        </div>
+    </section>
+
+    <div class="description">
+        <p>PAZ BEACH RESORT CANSOJONG TALISAY CITY CEBU</p>
+        <p>GAHOLICSFS@GMAIL.COM</p>
+        <p>09184829404</p>
+    </div>
+
+</body>
+<script>
+    const boxes = document.querySelectorAll('.box, .box2, .box3');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    boxes.forEach(box => observer.observe(box));
+</script>
+</html>

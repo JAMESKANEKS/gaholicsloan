@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirements</title>
+
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="assets/apply.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/brittany-signature-script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a><div class="hover"></div></li>
+                <li ><a href="requirement.html">REQUIREMENTS</a><div class="hover2"></div></li>
+                <li class="boldt"><a href="#">APPLY FOR A LOAN</a><div class="underline"></div></li>
+                <li><a href="about.html">ABOUT US</a><div class="hover3"></div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sec1">
+         <h1 class="build2">LOAN OPTIONS</h1>
+         <div class="container">
+            <div class="box">
+            <h1>CREDIT CARD</h1>
+            <p>12 MONTHS TO PAY</p>
+            <img src="assets/images2/gadget.jpg" alt="gadget">
+         </div>
+         <div class="box2"> 
+            <h1>QUICK LOAN</h1>
+            <p>1 MONTH TO PAY 10%</p>
+            <img src="assets/images2/foods.jpg" alt="foods">
+         </div>
+         <div class="box3">
+            <h1>REGULAR LOAN</h1>
+            <p>2 MONTHS TO PAY 9%</p>
+            <img src="assets/images2/vacation.jpg" alt="vacation">
+         </div>
+
+         </div>
+
+
+         <div class="sec1-button">
+            <a href="#Contract"><button>LOAN NOW</button></a>
+         </div>
+         
+         
+         <h1 class="build2">LOAN AMOUNT</h1>
+
+          <table>
+        <tr>
+            <th class="headertable">AMOUNT</th>
+            <th class="headertable">NET</th>
+            <th class="headertable">PAYMENT</th>
+        </tr>
+        <tr>
+            <th>10,000</th>
+            <th>8,200</th>
+            <th>2,500</th>
+        </tr>
+        <tr>
+            <th>15,000</th>
+            <th>12,300</th>
+            <th>3,750</th>
+        </tr>
+        <tr>
+            <th>20,000</th>
+            <th>16,400</th>
+            <th>5,000</th>
+        </tr>
+        <tr>
+            <th>25,000</th>
+            <th>20,500</th>
+            <th>6,250</th>
+        </tr>
+        <tr>
+            <th>30,000</th>
+            <th>24,600</th>
+            <th>7,500</th>
+        </tr>
+        <tr>
+            <th>40,000</th>
+            <th>32,800</th>
+            <th>10,000</th>
+        </tr>
+        <tr>
+            <th>50,000</th>
+            <th>41,000</th>
+            <th>12,500</th>
+        </tr>
+    </table>
+
+    <h1 class="build2">GET THE AMOUNT THAT FITS YOUR NEEDS</h1>
+
+<div class="fee">
+    <div class="feebox">
+        <h1>PHP 450 late fee per
+account</h1>
+    </div>
+    <div class="feebox">
+        <h1>
+cut off is every 15th and
+30th of the month</h1>
+    </div>
+    <div class="feebox">
+        <h1>2 months to pay for
+the regular loan</h1>
+    </div>
+</div>
+
+<div class="money">
+    <div class="wid">
+        <div class="img-crop">
+        </div>
+            <h1>A WELL-<br>
+               MANAGED<br>
+              LOAN CAN HELP
+              YOU REACH<br>
+              YOUR GOALS<br>  
+              AND BUILD<br>
+              FINANCIAL<br>
+             STABILITY</h1>
+     </div>
+          </div>
+
+          <h1 class="build2">APPLY HERE</h1>
+
+
+          <div class="contract" id="Contract">
+            <div class="desc">
+                <img src="assets/images2/contract.jpg" alt="contract"><br>
+            <a href="https://drive.google.com/file/d/11_RnHuDXBYUPBTXlbRTyqAUaDTzAEwk6/view?usp=sharing"><button>Get Contract</button></a>
+            </div>
+
+            <form id="contact-form">
+  <input type="text" id="name" placeholder="Full Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <input type="tel" id="phone" placeholder="Mobile Number" required>
+  <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit">Request</button>
+</form>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    // Initialize EmailJS with your Public Key
+    emailjs.init('CGnSDnhUFgqo8lpXn'); // <-- Replace with your EmailJS public key
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const templateParams = {
+  name: document.getElementById('name').value,
+  email: document.getElementById('email').value,
+  phone: document.getElementById('phone').value, // <-- new field
+  message: document.getElementById('message').value,
+  reply_to: document.getElementById('email').value
+};
+
+
+      // Send email via EmailJS Gmail service
+      emailjs.send('service_hqrb5j5', 'template_bvvpezo', templateParams)
+        .then(() => {
+          alert('Message sent successfully!');
+          form.reset();
+        }, (error) => {
+          alert('Failed to send message: ' + JSON.stringify(error));
+        });
+    });
+  </script>
+
+  <div class="bag">
+    <img src="assets/images2/bag.jpg" alt="sample 1">
+  </div>
+            
+          </div>          
+
+    </section>
+
+   <div class="gray-footer-abs">
+    <div class="footer-text-abs">
+        <h2>.LOAN<br>.PAY<br>.REPEAT</h2>
+        <h1>GAHOLICS</h1>
+    </div>
+
+    <div class="footer-img-abs">
+        <img src="assets/images2/sandal.jpg" alt="image">
+    </div>
+</div>
+
+  <div class="description">
+        <p>PAZ BEACH RESORT CANSOJONG TALISAY CITY CEBU</p>
+        <p>GAHOLICSFS@GMAIL.COM</p>
+        <p>09184829404</p>
+    </div>
+
+</body>
+<script>
+    const boxes = document.querySelectorAll('.box, .box2, .box3');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    boxes.forEach(box => observer.observe(box));
+</script>
+</html>

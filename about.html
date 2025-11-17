@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requirements</title>
+
+    <link rel="icon" href="assets/icon.png">
+    <link rel="stylesheet" href="assets/about.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/brittany-signature-script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a><div class="hover"></div></li>
+                <li><a href="requirement.html">REQUIREMENTS</a><div class="hover3"></div></li>
+                <li><a href="apply.html">APPLY FOR A LOAN</a><div class="hover2"></div></li>
+                <li class="boldt"><a href="#">ABOUT US</a><div class="underline"></div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="sec1">
+        <div class="images">
+            <img src="assets/images/stress.jpg" alt="sample1">
+            <img src="assets/images/emergency.jpg" alt="sample2">
+        </div>
+
+        <h1 class="build2">ABOUT US . . .</h1>
+
+        <div class="sec-text">
+            <img src="assets/images/tree.jpg" alt="sample3">
+            <p>
+                At GAHOLICS FINANCIAL SERVICES, we believe that everyone deserves a chance to grow and move forward no matter their situation. We understand that life can bring unexpected expenses, business opportunities, or personal needs that require financial support. That’s where we come in.
+            </p>
+        </div>
+
+        <p>
+            Our goal is simple : to provide fast, fair, and flexible loans to help individuals and families meet their financial goals. Whether it’s for education, business, home improvement, or emergencies, we’re here to make borrowing easy, honest, and accessible.
+        </p>
+
+        <h1 class="build2">FINANCIAL SOLUTION</h1>
+
+        <div class="videos">
+            <video autoplay loop muted>
+                <source src="assets/images/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <div class="description">
+        <p>PAZ BEACH RESORT CANSOJONG TALISAY CITY CEBU</p>
+        <p>GAHOLICSFS@GMAIL.COM</p>
+        <p>09184829404</p>
+    </div>
+
+</body>
+<script>
+    const boxes = document.querySelectorAll('.images');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    boxes.forEach(box => observer.observe(box));
+</script>
+</html>

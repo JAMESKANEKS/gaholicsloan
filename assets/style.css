@@ -1,0 +1,329 @@
+/* RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 20px 20px;
+    background-color: rgb(245, 252, 166);
+    border-bottom: 1px rgba(128, 128, 128, 0.308) solid;
+    position: fixed;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: rgba(0, 0, 0, 0.555);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li:hover a {
+    color: black;
+}
+
+nav ul li .hover,
+nav ul li .hover2,
+nav ul li .hover3
+ {
+    width: 0;
+    transition: width 0.5s ease;
+}
+
+nav ul li:hover .hover {
+    width: 120px;
+    height: 2px;
+    background-color: rgb(226, 169, 241);
+}
+
+nav ul li:hover .hover2 {
+    width: 135px;
+    height: 2px;
+    background-color: rgb(226, 169, 241);
+}
+nav ul li:hover .hover3{
+    width: 70px;
+    height: 2px;
+    background-color: rgb(226, 169, 241);
+}
+
+nav ul .boldt a {
+    color: black;
+}
+
+nav ul .boldt .underline {
+    height: 2px;
+    width: 50px;
+    background-color: rgb(226, 169, 241);
+}
+
+/* SECTION 1 (HERO) */
+.sec1 {
+    background-image: url('images/bg.jpg');
+    width: 100%;
+    height: 80vh;
+    background-position: center 15%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 120px;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 252, 166);
+}
+
+.text h2 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.text-sign {
+    color: rgb(245, 252, 166);
+    margin-top: 100px;
+}
+
+.text-sign h2 {
+    font-family: 'Brittany Signature Script', sans-serif;
+    font-size: 10rem;
+    font-weight: 500;
+    line-height: 0.5;
+}
+
+.text-sign h1 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.sec1 p {
+    font-size: 2rem;
+    color: rgb(245, 252, 166);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* SECTION 2 */
+.sec2 {
+    width: 100%;
+    background-color: rgb(245, 252, 166);
+    text-align: center;
+    padding: 80px 200px;
+}
+
+.sec2-text h1 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.images {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.image1, .image2, .image3, .image4 {
+    transform: translateX(-150px);
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+}
+.image1.show, .image2.show, .image3.show, .image4.show  {   
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.images img {
+    width: 430px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.build,
+.build2 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: rgb(226, 169, 241);
+    margin-top: 50px;
+}
+
+.description2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.logo {
+    background-image: url(images/logod.jpg);
+    height: 430px;
+    width: 600px;
+    background-position: center 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px auto;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 20px 80px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;                                           
+}
+
+/* ============================= */
+/*         RESPONSIVE FIXES      */
+/* ============================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 20px;
+    }
+
+    .sec1 {
+        height: 60vh;
+        background-position: center 16%;
+    }
+
+    .text-sign h2 {
+        font-size: 7rem;
+    }
+
+    .text-sign h1 {
+        font-size: 3.8rem;
+    }
+
+    .sec2 {
+        padding: 80px 80px;
+    }
+
+    .images img {
+        width: 350px;
+        height: 320px;
+    }
+
+    .build, .build2 {
+        font-size: 4.5rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .sec1 {
+        height: 35vh;
+        background-position: center 20%;
+        padding-top: 20px;
+    }
+
+    .text-sign h2 {
+        font-size: 4.5rem;
+    }
+
+    .text-sign h1 {
+        font-size: 2rem;
+    }
+
+    .sec1 p {
+        font-size: 1.2rem;
+    }
+
+    .sec2 {
+        padding: 60px 40px;
+    }
+
+    .sec2-text h1 {
+        font-size: 2rem;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .images img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .description2 {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .description {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .build, .build2 {
+        font-size: 3rem;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 480px) {
+    .sec1 {
+        padding-top: 150px;
+        background-position: center 45%;
+    }
+
+    .text-sign h2 {
+        font-size: 3.5rem;
+    }
+
+    .text-sign h1 {
+        font-size: 2rem;
+    }
+
+    .sec1 p {
+        font-size: 1rem;
+    }
+
+    .build, .build2 {
+        font-size: 2.3rem;
+    }
+}
