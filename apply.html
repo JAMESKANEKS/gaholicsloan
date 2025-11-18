@@ -89,18 +89,55 @@
          <div class="contract" id="Contract">
             <div class="desc">
                 <img src="assets/images2/contract.jpg" alt="contract"><br>
-                <a href="https://drive.google.com/file/d/11_RnHuDXBYUPBTXlbRTyqAUaDTzAEwk6/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/10EBuHx8BTLBF27VYuPsTHtpQs1-TvC6P/view?usp=sharing">
                     <button>Get Contract</button>
                 </a>
             </div>
 
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <input type="tel" id="phone" placeholder="Mobile Number" required>
-                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Request</button>
-            </form>
+            
+<form action="https://formsubmit.co/gaholicsfs@gmail.com" method="POST" enctype="multipart/form-data">
+  <h2>Submit Your Application</h2>
+
+  <label for="name">Your Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Your Email:</label>
+  <!-- Change name to _replyto -->
+  <input type="email" id="email" name="_replyto" required>
+
+  <label for="mobile">Your Mobile Number:</label>
+  <input type="text" id="mobile" name="mobile" required>
+
+  <label for="loan">Kindly put a Loan Amount:</label>
+  <input type="text" id="loan" name="loan" required>
+
+  <div id="file-attachments">
+    <p class="note">Submit a 2 valid id and Contract and 2x2 pic</p>
+    <input type="file" name="file[]" required>
+  </div>
+ <p class="note">You can attach multiple files. Max size per file: 5 MB.</p><br>
+  <button type="button" class="add-more-btn" onclick="addFileInput()">Add More Files</button>
+
+  <!-- Hidden optional fields -->
+  <input type="hidden" name="_subject" value="New File Submission">
+  <input type="hidden" name="_captcha" value="false">
+
+  <button type="submit">Send Files</button>
+</form>
+
+<script>
+  let fileCount = 1;
+  function addFileInput() {
+    fileCount++;
+    const container = document.getElementById("file-attachments");
+    const input = document.createElement("input");
+    input.type = "file";
+    input.name = "file[]";
+    input.required = true;
+    container.appendChild(input);
+  }
+</script>
+
 
             <div class="bag">
                 <img src="assets/images2/bag.jpg" alt="sample 1">
@@ -147,7 +184,8 @@
         boxes.forEach(box => observer.observe(box));
     </script>
 
-    <!-- EMAILJS + POPUP HANDLER -->
+    <!-- EMAILJS + POPUP HANDLER 
+    
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -184,7 +222,7 @@
             });
 
         });
-    </script>
+    </script>-->
 
 </body>
 </html>
