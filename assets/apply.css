@@ -486,7 +486,7 @@ form textarea{
 
     .footer-text-abs {
         left: 15px;
-        top: 50%;
+        top: 58%;
     }
 
     .footer-img-abs {
@@ -495,11 +495,11 @@ form textarea{
     }
 
     .footer-text-abs h2 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .footer-text-abs h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .footer-img-abs img {
