@@ -357,7 +357,7 @@ form textarea{
 .gray-footer-abs {
     position: relative;
     width: 100%;
-    height: 550px; /* desktop default */
+    height: 600px; /* desktop default */
     background-color: #dcdcdc;
     overflow: hidden;
 }
@@ -365,32 +365,35 @@ form textarea{
 /* LEFT TEXT (absolute always) */
 .footer-text-abs {
     position: absolute;
-    left: 80px;           /* desktop */
-    top: 50%;
+    left: 450px;           /* desktop */
+    top: 60%;
     transform: translateY(-50%);
     color: #f5fca6;
     z-index: 10;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-text-abs h2 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 900;
     line-height: 1.1;
+    letter-spacing: -10px;
 }
 
 .footer-text-abs h1 {
-    font-size: 9rem;
-    font-weight: 900;
-    letter-spacing: -8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 10rem;
+    font-weight: 1000;
+    letter-spacing: -15px;
     margin-top: 20px;
 }
 
 /* RIGHT IMAGE (absolute always) */
 .footer-img-abs {
     position: absolute;
-    right: 80px;         /* desktop */
+    right: 450px;         /* desktop */
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     z-index: 5;
 }
 
@@ -439,7 +442,7 @@ form textarea{
 
     .footer-text-abs {
         left: 20px; /* move text left */
-        top: 55%;   /* adjust vertical */
+        top: 60%;   /* adjust vertical */
     }
 
     .footer-img-abs {
@@ -449,12 +452,12 @@ form textarea{
 
     .footer-text-abs h2 {
         font-size: 3rem;
-        letter-spacing: -1px;
+        letter-spacing: -4px;
     }
 
     .footer-text-abs h1 {
-        font-size: 4rem;
-        letter-spacing: -1px;
+        font-size: 5rem;
+        letter-spacing: -6px;
     }
 
     .footer-img-abs img {
